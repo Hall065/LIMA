@@ -1,0 +1,54 @@
+/* Exemplo de arquivo CSS */
+
+/**
+ * Estilos para a Aula 01
+ */
+
+/* Define a fonte padrão do corpo da página e o espaçamento entre linhas */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Define a cor do texto dos títulos h1 */
+h1 {
+    color: #333;
+}
+
+/* Define a cor do texto dos títulos h2 */
+h2 {
+    color: #555;
+}
+
+/* Remove os marcadores padrão da lista e o espaçamento interno */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Define o fundo, margem e espaçamento interno dos itens da lista */
+li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* Define a cor dos links e remove o sublinhado padrão */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Adiciona sublinhado ao passar o mouse sobre o link */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #555;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: justify;
+}
