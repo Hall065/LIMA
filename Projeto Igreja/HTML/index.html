@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paróquia Santo Antônio</title>
+    <link rel="shortcut icon" href="../Icons/icone.png" type="image/x-icon">
+    <link rel="preload" as="image" href="../Imagens/capela.jpg">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <!-- HERO: "teto" da página -->
+    <header class="hero" role="banner" aria-label="Abertura com teto da Capela Sistina">
+        <!-- Botão menu hambúrguer -->
+        <button class="menu-btn" aria-label="Abrir menu" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- Overlay para fechar ao clicar fora -->
+        <div class="menu-overlay" onclick="closeMenu()"></div>
+
+        <!-- Menu lateral -->
+        <nav class="side-menu">
+            <a href="#agenda" onclick="closeMenu()">Agenda</a>
+            <a href="#noticias" onclick="closeMenu()">Notícias</a>
+            <a href="#mensagens" onclick="closeMenu()">Comentários & Sugestões</a>
+            <a href="https://link-externo.com" onclick="closeMenu()">Site Oficial</a>
+            <a href="https://outra-pagina.com" onclick="closeMenu()">Contato</a>
+        </nav>
+
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">Paróquia Santo Antônio</h1>
+            <p class="hero__subtitle">Fé, comunidade e serviço</p>
+            <a href="#agenda" class="btn">Ver Agenda</a>
+        </div>
+
+        <button class="scroll-cue" aria-label="Rolar para o conteúdo" onclick="document.querySelector('#agenda').scrollIntoView({behavior:'smooth'})">
+            ↓
+        </button>
+    </header>
+
+    <main>
+        <section id="agenda" class="section">
+            <h2>Agenda de Eventos</h2>
+            <!-- conteúdo da agenda -->
+        </section>
+
+        <section id="noticias" class="section">
+            <h2>Notícias</h2>
+            <!-- conteúdo das notícias -->
+        </section>
+
+        <section id="mensagens" class="section">
+            <h2>Comentários & Sugestões</h2>
+            <!-- formulário entra aqui depois -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>
+            © 2025 Paróquia Santo Antônio.
+        </small>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+            document.querySelector('.menu-btn').textContent = document.body.classList.contains('menu-open') ? '✖' : '☰';
+        }
+
+        function closeMenu() {
+            document.body.classList.remove('menu-open');
+            document.querySelector('.menu-btn').textContent = '☰';
+        }
+    </script>
+</body>
+</html>
