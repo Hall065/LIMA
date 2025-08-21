@@ -41,19 +41,61 @@
     </header>
 
     <main>
-        <section id="agenda" class="section">
-            <h2>Agenda de Eventos</h2>
-            <!-- conteúdo da agenda -->
-        </section>
-
         <section id="noticias" class="section">
             <h2>Notícias</h2>
             <!-- conteúdo das notícias -->
         </section>
 
-        <section id="mensagens" class="section">
-            <h2>Comentários & Sugestões</h2>
-            <!-- formulário entra aqui depois -->
+    <!-- Seção de Agenda / Cadastro de Evento -->
+        <section class="section" id="agenda">
+        <h2>Cadastro de Evento</h2>
+        <form class="form-agenda">
+            <label>
+            Nome do Evento:
+            <input type="text" placeholder="Digite o nome do evento" required>
+            </label>
+            <label>
+            Data:
+            <input type="date" required>
+            </label>
+            <label>
+            Local:
+            <input type="text" placeholder="Digite o local do evento" required>
+            </label>
+            <label>
+            Descrição:
+            <textarea rows="4" placeholder="Escreva uma breve descrição..."></textarea>
+            </label>
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+        </section>
+
+        <!-- Seção de Comentários -->
+        <section class="section" id="comentarios">
+        <h2>Comentários</h2>
+        <form class="form-comentarios">
+            <label>
+            Seu Nome:
+            <input type="text" placeholder="Digite seu nome" required>
+            </label>
+            <label>
+            Comentário:
+            <textarea rows="4" placeholder="Escreva seu comentário..." required></textarea>
+            </label>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <!-- Lista visual de comentários (exemplo fake) -->
+        <div class="comentarios-lista">
+            <article class="comentario">
+            <h3>Brenda</h3>
+            <p>Adorei a ideia, mal posso esperar pelo próximo evento!</p>
+            </article>
+            <article class="comentario">
+            <h3>Lucas</h3>
+            <p>Ficou muito bonito o site 👏</p>
+            </article>
+        </div>
         </section>
     </main>
 
