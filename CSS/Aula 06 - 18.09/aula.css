@@ -1,0 +1,29 @@
+body {
+    font: 1em Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+}
+
+h1 {
+    text-align: center;
+    color: saddlebrown;
+    text-shadow: 2px 2px 4px lightgray;
+}
+article#caixa {
+    background-color: snow;
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    /*sombra aqui*/
+    box-shadow: 3px 5px 4px gray;
+    border-radius: 10px 30px;
+}
+section#sessao1 {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+nav {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
