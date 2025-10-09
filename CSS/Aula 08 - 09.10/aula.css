@@ -1,0 +1,58 @@
+div.quadrado {
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+div#quadrado1 {
+    background-color: lightcoral;
+}
+
+div#quadrado2 {
+    background-image: radial-gradient(circle, lightcoral , whitesmoke);
+}
+
+div#quadrado3 {
+    background-image: url(images/Shaw!.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+    /* background-size: contain
+    background-size: auto;
+    background-size: 50px;
+    background-size: cover; */
+
+    /* background-attachment: fixed;
+    background-attachment: scroll; */
+}
+
+body {
+    background-color: black;
+    background-image: url('images/Wall.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+div#dentro {
+    width: 200px;
+    height: 300px;
+    background-color: lightpink;
+    position: absolute;
+    left: 10%;
+    right: 80%;   
+}
+
+div#fora {
+    height: 10vh;
+    background-color: whitesmoke;
+    position: relative;
+}
