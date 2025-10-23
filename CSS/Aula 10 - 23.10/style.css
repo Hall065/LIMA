@@ -114,10 +114,6 @@ main {
   transition: 0.3s;
 }
 
-.box:hover {
-  transform: translateY(-3px);
-}
-
 /* Títulos */
 .titulo {
   color: var(--cor-principal);
