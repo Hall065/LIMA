@@ -1,3 +1,31 @@
+/* Tema Principal */
+:root {
+  /* Cores principais */
+  --cor-principal: #c20000;
+  --cor-secundaria: #ff3b3b;
+  --cor-fundo: #ffe6e6;
+  --cor-caixa: #fff7f7;
+  --cor-borda-caixa: #ffd0d0;
+  --cor-destaque: #ffc7c7;
+  --cor-hover: #ffa9a9;
+  --cor-lista: #ffe1e1;
+
+  /* Cores de texto */
+  --texto-principal: #333;
+  --texto-claro: #fff;
+
+  /* Sombras e bordas */
+  --sombra-caixa: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --raio-borda: 10px;
+
+  /* Fontes e tamanhos */
+  --fonte-base: "Segoe UI", Arial, sans-serif;
+  --tamanho-titulo: 2rem;
+  --tamanho-subtitulo: 1rem;
+  --tamanho-texto: 0.95rem;
+}
+
+/* Reset e estrutura básica */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,33 +33,35 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #ffe6e6;
+  font-family: var(--fonte-base);
+  background-color: var(--cor-fundo);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Cabeçalho */
 header {
-  background: linear-gradient(180deg, #ff3b3b, #c20000);
-  color: white;
+  background: linear-gradient(180deg, var(--cor-secundaria), var(--cor-principal));
+  color: var(--texto-claro);
   text-align: center;
   padding: 40px 20px;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: var(--tamanho-titulo);
   letter-spacing: 2px;
 }
 
 header p {
-  font-size: 1rem;
+  font-size: var(--tamanho-subtitulo);
   margin-top: 10px;
   opacity: 0.9;
 }
 
+/* Navegação */
 nav {
-  background-color: #c20000;
+  background-color: var(--cor-principal);
   text-align: center;
   padding: 10px 0;
   margin-bottom: 10px;
@@ -47,15 +77,16 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--texto-claro);
   font-weight: 500;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ffa9a9;
+  color: var(--cor-hover);
 }
 
+/* Conteúdo principal */
 main {
   flex: 1;
   width: 90%;
@@ -64,33 +95,38 @@ main {
   padding: 20px;
 }
 
+/* Caixas */
 .box {
-  background-color: #fff7f7;
-  border: 2px solid #ffd0d0;
-  border-radius: 10px;
+  background-color: var(--cor-caixa);
+  border: 2px solid var(--cor-borda-caixa);
+  border-radius: var(--raio-borda);
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: var(--sombra-caixa);
 }
 
+/* Títulos */
 .titulo {
-  color: #c20000;
-  border-bottom: 2px solid #ffc7c7;
+  color: var(--cor-principal);
+  border-bottom: 2px solid var(--cor-destaque);
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
 h3 {
-  color: #ff3b3b;
+  color: var(--cor-secundaria);
   margin-top: 15px;
 }
 
+/* Textos */
 p {
   margin: 10px 0;
   line-height: 1.6;
-  color: #333;
+  color: var(--texto-principal);
+  font-size: var(--tamanho-texto);
 }
 
+/* Listas */
 ul.dados {
   margin-top: 10px;
   list-style: square inside;
@@ -104,25 +140,28 @@ ul.dados {
 }
 
 .lista li {
-  background: #ffe1e1;
+  background: var(--cor-lista);
   padding: 8px;
   border-radius: 6px;
   text-align: center;
   font-size: 0.9rem;
 }
 
+/* Vídeo */
 iframe {
   margin-top: 15px;
-  border-radius: 10px;
+  border-radius: var(--raio-borda);
 }
 
+/* Créditos */
 .creditos {
   margin: 15px 0;
 }
 
+/* Rodapé */
 footer {
-  background: linear-gradient(180deg, #ff3b3b, #c20000);
-  color: white;
+  background: linear-gradient(180deg, var(--cor-secundaria), var(--cor-principal));
+  color: var(--texto-claro);
   text-align: center;
   padding: 10px 0;
   font-size: 0.8rem;
